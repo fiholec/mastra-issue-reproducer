@@ -2,7 +2,7 @@
 
 When running Mastra in serve mode (mastra serve / nx run nuomy-ai:serve) on a Linux environment, we encounter repeated TypeError: fetch failed errors with ETIMEDOUT causes.
 
-The issue occurs during content generation workflows (e.g., markdown-composer, sorting-lines-composer). The generation itself often completes (sometimes after retries), but the process is spammed with these connection errors, and log flushing fails.
+The issue occurs during content generation workflows (e.g., markdown-composer, sorting-lines-composer). The generation itself completes in rare cases (sometimes after retries), but the process is spammed with connection errors.
 
 Full service log:
 ```
